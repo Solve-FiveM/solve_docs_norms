@@ -149,33 +149,33 @@ t.Print = function(s) {
 #### Identifiants des événements FiveM
 
 Lors de l'utilisation d'événements FiveM, vous devez  spécifier des identifiants uniques.
-Format spécifique : `B:Addon:EventName`. L'objectif ne doit pas contenir plus de 2 mots.
+Format spécifique : `S:Addon:EventName`. L'objectif ne doit pas contenir plus de 2 mots.
 
 **Exemples :**
 
 ```lua
-✔️ RegisterNetEvent("B:Banking:TransferMoney")
-✔️ RegisterNetEvent("B:Fuel:ConsumeGas")
-✔️ RegisterNetEvent("B:Inventory:UpdateItems")
-✔️ TriggerEvent("B:HUD:RefreshDisplay")
+✔️ RegisterNetEvent("S:Banking:TransferMoney")
+✔️ RegisterNetEvent("S:Fuel:ConsumeGas")
+✔️ RegisterNetEvent("S:Inventory:UpdateItems")
+✔️ TriggerEvent("S:HUD:RefreshDisplay")
 ```
 
 #### Identifiants des timers
 
-Format spécifique : `B:Addon:Goal`. L'objectif ne doit pas contenir plus de 2 mots.
+Format spécifique : `S:Addon:Goal`. L'objectif ne doit pas contenir plus de 2 mots.
 
 **Exemples Lua (FiveM) :**
 
 ```lua
-✔️ SetTimeout(5000, function() end) -- Nommé: "B:Banking:UpdateBalance"
-✔️ CreateThread(function() end) -- Nommé: "B:Fuel:ConsumeGas"
+✔️ SetTimeout(5000, function() end) -- Nommé: "S:Banking:UpdateBalance"
+✔️ CreateThread(function() end) -- Nommé: "S:Fuel:ConsumeGas"
 ```
 
 **Exemples JavaScript :**
 
 ```javascript
-✔️ setTimeout(fcCallback, 5000); // B:Banking:UpdateBalance
-✔️ setInterval(fcCallback, 30000); // B:Weather:UpdateSystem
+✔️ setTimeout(fcCallback, 5000); // S:Banking:UpdateBalance
+✔️ setInterval(fcCallback, 30000); // S:Weather:UpdateSystem
 ```
 
 #### Casse
