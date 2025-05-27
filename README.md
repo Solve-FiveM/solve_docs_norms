@@ -2,6 +2,72 @@
 
 ---
 
+### 🧾 Informations du projet
+
+Chaque projet ou ressource doit contenir en tête de son README.md :
+
+```markdown
+# Nom de la ressource
+
+📌 Auteur principal : Prénom et ou pseudo  
+👥 Auteurs secondaires : Liste des contributeurs ayant modifié le code  
+📅 Date de la dernière modification : JJ/MM/AAAA  
+🗂️ Type de projet : FiveM, Web, Discord, Backend, etc.  
+📃 Description : Brève description de l'objectif du script ou module  
+```
+
+### 🌍 Langue et style
+
+- **Variables/fonctions/classes :** anglais
+- **Commentaires :** français
+- **Fichiers :** kebab-case ou snake_case selon le langage
+
+### 🌐 Git & branches
+
+- **main :** branche stable (production)
+- **dev :** branche de développement
+- **Optionnel :** feature/, fix/, docs/
+
+### 💬 Commentaires
+
+- Toujours en français
+- Utiliser des emojis/tags pour signaler les zones importantes
+
+**Lua :**
+```lua
+-- 🔁 Recharge l'inventaire du joueur
+function reloadInventory(playerId)
+    -- TODO : Ajouter vérification du poids
+end
+```
+
+**JavaScript :**
+```javascript
+// 🔒 Vérifie si l'utilisateur est admin
+if (!isAdmin(user)) return
+```
+
+### 🚀 Commits Git
+
+- **feat:** ajout de fonctionnalité
+- **fix:** correction
+- **refactor, docs, chore**
+
+**Exemple :**
+```bash
+git commit -m "feat(inventory): add drag and drop support"
+```
+
+### 🛡️ Sécurité et bonnes pratiques
+
+- Ne pas exposer d'infos sensibles
+- Valider les données côté serveur
+- Pas de console.log/print en prod
+- Découper les fonctions longues
+- Centraliser les helpers dans /utils
+
+---
+
 ## 🎯 Standards de codage
 
 ### Nommage des variables
@@ -82,7 +148,7 @@ t.Print = function(s) {
 
 #### Identifiants des événements FiveM
 
-Lors de l'utilisation d'événements FiveM, vous devez spécifier des identifiants uniques.
+Lors de l'utilisation d'événements FiveM, vous devez  spécifier des identifiants uniques.
 Format spécifique : `B:Addon:EventName`. L'objectif ne doit pas contenir plus de 2 mots.
 
 **Exemples :**
